@@ -1,7 +1,110 @@
-.start {}
+html {
+    height: 100%;
+    width: 100%;
+}
 
-.CHA {}
 
-.CHB {}
 
-.CHL {}
+#parallax4 {
+    /* The image used */
+    background-image: url(imgs/back-1.jpg);
+
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: -10px;
+    padding-right: -10px;
+}
+
+#parallax5 {
+    /* The image used */
+    background-image: url(imgs/back-2.png);
+
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: -10px;
+    padding-right: -10px;
+}
+
+#parallax6 {
+    /* The image used */
+    background-image: url(imgs/back-3.jpg);
+
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: -10px;
+    padding-right: -10px;
+}
+
+#parallax7 {
+    /* The image used */
+    background-image: url(imgs/bg-4.png);
+
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: -10px;
+    padding-right: -10px;
+}
+
+.start {
+    background: url(imgs/back-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+.CHA {
+    background: url(imgs/back-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+.CHB {
+    background: url(imgs/back-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+.CHL {
+    background: url(imgs/bg-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
