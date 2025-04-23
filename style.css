@@ -90,3 +90,23 @@ html {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.logo-3 {
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white
+}
+
+.logo-4 {
+    height: 500px;
+    width: 1000px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10%;
+    margin-top: 50px;
+    margin-left: 22%;
+    margin-right: 22%;
+}
