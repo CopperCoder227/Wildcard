@@ -1,7 +1,9 @@
 const songs = [
-    { id: 'song1', section: 'parallax1' },
-    { id: 'song2', section: 'parallax2' },
-    { id: 'song3', section: 'parallax3' }
+    { id: 'song1', section: 'parallax4' },
+    { id: 'song2', section: 'parallax5' },
+    { id: 'song3', section: 'parallax6' },
+    { id: 'song4', section: 'parallax7' }
+
 ];
 
 let currentAudio = null;
