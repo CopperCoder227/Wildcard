@@ -36,3 +36,65 @@ window.addEventListener('scroll', () => {
         song2.pause();
     }
 });
+
+
+
+
+
+const songs = [
+    { id: 'song1', section: 'parallax1' },
+    { id: 'song2', section: 'parallax2' },
+    { id: 'song3', section: 'parallax3' }
+];
+
+let currentAudio = null;
+
+function playSong(songId) {
+    if (currentAudio && currentAudio.id !== songId) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+    }
+
+    const newAudio = document.getElementById(songId);
+    if (newAudio && newAudio !== currentAudio) {
+        newAudio.play();
+        currentAudio = newAudio;
+    }
+}
+
+function checkScroll() {
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    for (let s of songs) {
+        const section = document.getElementById(s.section);
+        if (section) {
+            const rect = section.getBoundingClientRect();
+            const top = rect.top + window.scrollY;
+            const bottom = top + rect.height;
+
+            if (scrollPosition >= top && scrollPosition < bottom) {
+                playSong(s.id);
+                break;
+            }
+        }
+    }
+}
+
+// Mute and unmute the first song to bypass autoplay restrictions
+window.addEventListener('load', () => {
+    // Allow the first song to play with the muted attribute
+    const firstSong = document.getElementById('song1');
+    firstSong.play();
+
+    // Wait for a moment (like a timeout) and then unmute
+    setTimeout(() => {
+        firstSong.muted = false;
+    }, 1000); // Unmute after 1 second
+});
+
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('load', checkScroll); // Run once on page load
+
+setTimeout(() => {
+    firstSong.muted = false;
+}, 1000); // Adjust delay if needed
