@@ -1,46 +1,3 @@
-// Get the audio elements
-const song1 = document.getElementById('song1');
-const song2 = document.getElementById('song2');
-
-// Get the sections to trigger the audio change
-const parallax5 = document.getElementById('parallax5');
-const parallax6 = document.getElementById('parallax6');
-const parallax7 = document.getElementById('parallax7');
-
-// Start song1 when the page loads
-window.addEventListener('load', () => {
-    song1.play();
-});
-
-// Listen to the scroll event and trigger audio changes
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY;
-
-    // When the scroll position reaches parallax5, stop song1 and play song2
-    if (scrollPosition >= parallax5.offsetTop - window.innerHeight / 2) {
-        if (!song1.paused) {
-            song1.pause();
-        }
-        song2.play();
-    } else {
-        // If in parallax4 or before parallax5 starts, stop song2 and play song1
-        if (!song2.paused) {
-            song2.pause();
-        }
-        song1.play();
-    }
-
-    // If the user scrolls into parallax7, stop both songs
-    if (scrollPosition >= parallax7.offsetTop - window.innerHeight / 2) {
-        song1.pause();
-        song2.pause();
-    }
-});
-
-
-
-
-
 const songs = [
     { id: 'song1', section: 'parallax1' },
     { id: 'song2', section: 'parallax2' },
@@ -49,7 +6,9 @@ const songs = [
 
 let currentAudio = null;
 
+// Function to play the song by its ID
 function playSong(songId) {
+    console.log(`Attempting to play: ${songId}`);
     if (currentAudio && currentAudio.id !== songId) {
         currentAudio.pause();
         currentAudio.currentTime = 0;
@@ -57,11 +16,16 @@ function playSong(songId) {
 
     const newAudio = document.getElementById(songId);
     if (newAudio && newAudio !== currentAudio) {
-        newAudio.play();
+        newAudio.play().then(() => {
+            console.log(`${songId} is playing.`);
+        }).catch((error) => {
+            console.error(`Error playing ${songId}:`, error);
+        });
         currentAudio = newAudio;
     }
 }
 
+// Function to check scroll position and change music based on visible section
 function checkScroll() {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
@@ -80,21 +44,25 @@ function checkScroll() {
     }
 }
 
-// Mute and unmute the first song to bypass autoplay restrictions
+// Automatically play the first song and unmute it after page load
 window.addEventListener('load', () => {
-    // Allow the first song to play with the muted attribute
     const firstSong = document.getElementById('song1');
-    firstSong.play();
+    console.log('Page loaded, attempting to play the first song.');
 
-    // Wait for a moment (like a timeout) and then unmute
+    // Try to play the song (it starts muted to bypass autoplay restrictions)
+    firstSong.play().then(() => {
+        console.log('First song is playing (muted initially).');
+    }).catch((error) => {
+        console.error('Error starting first song:', error);
+    });
+
+    // Unmute the first song after a brief delay (1 second)
     setTimeout(() => {
         firstSong.muted = false;
-    }, 1000); // Unmute after 1 second
+        console.log('Unmuting first song.');
+    }, 1000); // Adjust this delay if needed
 });
 
+// Monitor scroll event to change music based on visible section
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll); // Run once on page load
-
-setTimeout(() => {
-    firstSong.muted = false;
-}, 1000); // Adjust delay if needed
