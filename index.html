@@ -21,11 +21,50 @@
   </head>
 
   <body>
-
+ <!-- Navbar -->
+      <!-- turn navbar into secions to discuss all parts of his life etc-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary word">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">
+            <img src="imgs/loo.jpg" class="loo">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" class="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#1"
+                  >Ch. 1</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#2"
+                  >Ch. 2</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Light"
+                  >Lightners</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
       
 <div id="parallax4">
   <div class="header start" id="rellax" data-rellax-speed="-3" df>
-    <img class="logo-1" src="imgs/Logo.webp">
+    <img class="logo-1" src="imgs/Logo.webp" id="home">
     <br><br>
     <div class="text-center">
       <h2 class="logo-2">
@@ -45,7 +84,7 @@
 <!-- CHAPTER 1-->
 <div id="parallax5">
 <div class="header start" id="rellax" data-rellax-speed="-3" df>
-  <img class="logo-4" src="imgs/logo-1.png">
+  <img class="logo-4" src="imgs/logo-1.png" id="1">
   <br><br>
   <div class="text-center">
     
@@ -75,7 +114,7 @@
 
 <div id="parallax6">
   <div class="header start" id="rellax" data-rellax-speed="-3" df>
-    <img class="logo-4" src="imgs/logo-2.webp">
+    <img class="logo-4" src="imgs/logo-2.webp" id="2">
     <br><br>
     <div class="text-center">
 
@@ -90,12 +129,44 @@
       </div>
 
 
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
       </div>
     </div>
     </div>
 
 <div id="parallax7">  <div class="header start" id="rellax" data-rellax-speed="-3" df>
-  <img class="logo-4" src="imgs/logo-3.png">
+  <img class="logo-4" src="imgs/logo-3.png" id="Light">
   <br><br>
   <div class="text-center">
 
@@ -156,27 +227,22 @@
 
 
 <!--
-     
-      <div class="start">
 
 
-      </div>
-      
+     JavaScript Functionality (6 pts)
+Your site must include at least one JavaScript feature that uses:
+An array with looping or iteration to produce a visual or interactive effect.                           -ask if loop is ok if its not in js but loops
+At least one if/else statement or switch case to handle user input or modify the website’s state.
 
-      <div class="CHA">
+Interactivity (5 pts)
+Include at least two interactive features. These can include:
+Dynamic content updates (using document.getElementById()).
+Form inputs that affect the content or appearance of your site.
+Animation effects triggered by user actions.
+Other creative interactive features you come up with.
 
-        
-      </div>
-      
 
-      <div class="CHB">
-
-        
-      </div>
-      
-
-      <div class="CHL">
-
-        
-      </div>
+IF TIME PREMITS:
+Add section with new sprites for enmies
+change nav color
 
