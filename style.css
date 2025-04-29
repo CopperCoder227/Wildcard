@@ -25,6 +25,7 @@ body {
 
     padding-left: -10px;
     padding-right: -10px;
+
 }
 
 #parallax5 {
@@ -158,6 +159,104 @@ body {
     height: 30%;
     width: 30%;
 }
+
+.btn-1 {
+    background: rgb(255, 255, 255);
+    background-image: -webkit-linear-gradient(top, #f7134e, #37092e);
+    background-image: -moz-linear-gradient(top, #f7134e, #37092e);
+    background-image: -ms-linear-gradient(top, #f7134e, #37092e);
+    background-image: -o-linear-gradient(top, #f7134e, #37092e);
+    background-image: linear-gradient(to bottom, #f7134e, #37092e);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn-1:hover {
+    background: white;
+    background-image: -webkit-linear-gradient(top, #37092e, #f7134e);
+    background-image: -moz-linear-gradient(top, #37092e, #f7134e);
+    background-image: -ms-linear-gradient(top, #37092e, #f7134e);
+    background-image: -o-linear-gradient(top, #37092e, #f7134e);
+    background-image: linear-gradient(to bottom, #37092e, #f7134e);
+    text-decoration: none;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn-2 {
+    background: rgb(255, 255, 255);
+    background-image: -webkit-linear-gradient(top, #32d989, #282e46);
+    background-image: -moz-linear-gradient(top, #32d989, #282e46);
+    background-image: -ms-linear-gradient(top, #32d989, #282e46);
+    background-image: -o-linear-gradient(top, #32d989, #282e46);
+    background-image: linear-gradient(to bottom, #32d989, #282e46);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn-2:hover {
+    background: white;
+    background-image: -webkit-linear-gradient(top, #282e46, #32d989);
+    background-image: -moz-linear-gradient(top, #282e46, #32d989);
+    background-image: -ms-linear-gradient(top, #282e46, #32d989);
+    background-image: -o-linear-gradient(top, #282e46, #32d989);
+    background-image: linear-gradient(to bottom, #282e46, #32d989);
+    text-decoration: none;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn-3 {
+    background: rgb(255, 255, 255);
+    background-image: -webkit-linear-gradient(top, #ffad01, #000000);
+    background-image: -moz-linear-gradient(top, #ffad01, #000000);
+    background-image: -ms-linear-gradient(top, #ffad01, #000000);
+    background-image: -o-linear-gradient(top, #ffad01, #000000);
+    background-image: linear-gradient(to bottom, #ffad01, #000000);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn-3:hover {
+    background: white;
+    background-image: -webkit-linear-gradient(top, #000000, #ffad01);
+    background-image: -moz-linear-gradient(top, #000000, #ffad01);
+    background-image: -ms-linear-gradient(top, #000000, #ffad01);
+    background-image: -o-linear-gradient(top, #000000, #ffad01);
+    background-image: linear-gradient(to bottom, #000000, #ffad01);
+    text-decoration: none;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+
 
 /*
 .nav {
