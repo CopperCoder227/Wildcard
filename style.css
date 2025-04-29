@@ -131,7 +131,9 @@ body {
 }
 
 .seam {
-    border: 10%;
+    height: 40%;
+    width: 40%;
+    border: 200px;
     border-color: black;
 }
 
@@ -147,6 +149,15 @@ body {
     width: 50px;
 }
 
+.rounded {
+    height: 20%;
+    width: 20%;
+}
+
+.light {
+    height: 30%;
+    width: 30%;
+}
 
 /*
 .nav {
