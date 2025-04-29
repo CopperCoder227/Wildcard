@@ -131,6 +131,26 @@ body {
     gap: 20px;
 }
 
+
+.container img {
+    display: block;
+    /* Ensures each image is treated as a block element */
+    width: 100%;
+    /* Makes the image span the width of the container (optional) */
+    max-width: 300px;
+    /* Limits the image size to avoid overflow */
+    margin-bottom: 10px;
+    /* Adds spacing below each image */
+}
+
+.container p {
+    text-align: center;
+    /* Centers the text under each image */
+    margin-top: 5px;
+    /* Adds a little space above the text */
+}
+
+
 .seam {
     height: 40%;
     width: 40%;
