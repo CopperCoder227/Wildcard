@@ -284,11 +284,15 @@ body {
 
 .textd {
     color: white;
-    margin-top: 50%;
-    margin-bottom: 10%;
+    margin-top: 60%;
+    margin-bottom: 30%;
     margin-right: 40%;
+    margin-left: 12%;
 }
 
+.fonted {
+    font-size: 0.6vw;
+}
 
 
 /*
