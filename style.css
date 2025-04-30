@@ -257,6 +257,38 @@ body {
     padding: 10px 20px 10px 20px;
 }
 
+.shopa {
+    background: url(imgs/CH1/shoop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    /* or remove it */
+}
+
+.shopb {
+    background: url(imgs/CH2/shop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    /* or remove it */
+}
+
+.texts {
+    color: white;
+    margin-top: 50%;
+    margin-bottom: 10%;
+    margin-right: 40%;
+}
+
+.textd {
+    color: white;
+    margin-top: 50%;
+    margin-bottom: 10%;
+    margin-right: 40%;
+}
+
 
 
 /*
