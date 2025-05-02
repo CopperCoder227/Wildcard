@@ -2,7 +2,9 @@ const songs = [
     { id: 'song1', section: 'parallax4' },
     { id: 'song2', section: 'parallax5' },
     { id: 'song3', section: 'parallax6' },
-    { id: 'song4', section: 'parallax7' }
+    { id: 'song4', section: 'parallax7' },
+    { id: 'song5', section: 'parallax8' }
+
 
 ];
 

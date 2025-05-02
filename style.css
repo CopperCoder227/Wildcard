@@ -79,6 +79,22 @@ body {
     padding-right: -10px;
 }
 
+#parallax8 {
+    /* The image used */
+    background-image: url(imgs/back-5.jpg);
+
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: -10px;
+    padding-right: -10px;
+}
 
 .logo-1 {
     padding-left: 25%;
@@ -300,6 +316,12 @@ body {
 
 .dess {
     margin-left: 45%
+}
+
+
+.popo {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /*
